@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class Policy {
     private String name;
-    private ArrayList<Rule> rules;
-
+    private ArrayList<RuleData> rules;
     public Policy(String name) {
         this.name = name;
         this.rules = new ArrayList<>();
@@ -15,11 +14,11 @@ public class Policy {
         return name;
     }
 
-    public ArrayList<Rule> getRules() {
+    public ArrayList<RuleData> getRules() {
         return rules;
     }
 
-    public void addRule(Rule rule) {
+    public void addRule(RuleData rule) {
         this.rules.add(rule);
     }
 }
